@@ -123,7 +123,18 @@ body {
 
 /*============HERO SECTION STYLES============*/
 
+.hero-section {
+  padding-top: 0;
+  padding-bottom: 60px;
+  margin: auto;
+  background: #2e2f42;
+}
+
 .main-title {
+  padding-top: 188px;
+  padding-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -133,11 +144,16 @@ body {
 }
 
 .order-service-btn {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #fff;
+  padding-top: 24px;
+  padding-bottom: 188px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 4px;
+  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
 }
 
@@ -147,12 +163,14 @@ body {
   background: #404bbf;
 }
 
-.hero-section {
-  background: #2e2f42;
-}
 /*============/HERO SECTION STYLES============*/
 
 /*============OUR APPROACH STYLES============*/
+
+.approach {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 .approach-title {
   font-weight: 700;
@@ -161,28 +179,35 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  display: none;
 }
+
 .approach-list {
-  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  list-style: none;
+}
+
+.approach-list-item {
+  width: 264px;
+  height: 104px;
+  flex-basis: calc((100% - 24px) / 4);
 }
 
 .approach-list-title {
-  font-weight: 500;
-  font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  text-transform: capitalize;
 }
 
 .approach-list-text {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-}
-
-.approach-list-title {
-  text-transform: capitalize;
 }
 
 /*============/OUR APPROACH STYLES============*/
@@ -190,18 +215,38 @@ body {
 /*============REVIEW SECTION STYLES============*/
 
 .review-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: #f4f4fd;
 }
 
 .review-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 0;
+  list-style: none;
   background: #f4f4fd;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .review-list-item {
   background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
+  padding: 0px 0px 32px 0px;
+  width: 264px;
+  height: 380px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: #fff;
 }
 
 .review-title {
+  padding-top: 120px;
+  padding-bottom: 72px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -212,6 +257,7 @@ body {
 }
 
 .review-list-fullname {
+  padding: 32px 65px 4px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -222,6 +268,7 @@ body {
 }
 
 .review-list-text {
+  padding-left: 4px 52px 32px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -233,7 +280,14 @@ body {
 
 /*============PORTFOLIO SECTION STYLES============*/
 
+.portfolio-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .portfolio-title {
+  padding-top: 60px;
+  padding-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -241,6 +295,18 @@ body {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 0;
+  list-style: none;
+}
+
+.portfolio-list-item {
+  flex-basis: calc((100% - 24px) / 6);
 }
 
 .portfolio-list-title {
@@ -266,6 +332,11 @@ body {
 /*============/PORTFOLIO SECTION STYLES============*/
 
 /*============PAGE FOOTER STYLES============*/
+
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 0;
+}
 
 .footer-logo .logo-part {
   color: #f4f4fd;
