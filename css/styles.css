@@ -1,0 +1,237 @@
+/*============COMMON STYLES============*/
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #434455;
+  background-color: #fff;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.contacts-link:hover,
+.contacts-link:focus {
+  color: #404bbf;
+}
+
+/*============/COMMON STYLES============*/
+
+/*============PAGE-HEADER-STYLES============*/
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+
+/*.header-logo {
+  margin-right: 76px;
+}*/
+
+.header-logo .logo-part {
+  color: #2e2f42;
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.contacts-link {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.contacts {
+  font-style: normal;
+}
+
+/*============/PAGE-HEADER STYLES============*/
+
+/*============HERO SECTION STYLES============*/
+
+.main-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+}
+
+.order-service-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background: #4d5ae5;
+}
+
+.order-service-btn:hover,
+.order-service-btn:focus {
+  color: #fff;
+  background: #404bbf;
+}
+
+.hero-section {
+  background: #2e2f42;
+}
+/*============/HERO SECTION STYLES============*/
+
+/*============OUR APPROACH STYLES============*/
+
+.approach-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+}
+.approach-list {
+  background-color: #fff;
+}
+
+.approach-list-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.approach-list-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.approach-list-title {
+  text-transform: capitalize;
+}
+
+/*============/OUR APPROACH STYLES============*/
+
+/*============REVIEW SECTION STYLES============*/
+
+.review-section {
+  background: #f4f4fd;
+}
+
+.review-list {
+  background: #f4f4fd;
+}
+
+.review-list-item {
+  background-color: #ffffff;
+}
+
+.review-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  text-transform: capitalize;
+}
+
+.review-list-fullname {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  text-transform: capitalize;
+}
+
+.review-list-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #434455;
+}
+
+/*============/REVIEW SECTION STYLES============*/
+
+/*============PORTFOLIO SECTION STYLES============*/
+
+.portfolio-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  text-transform: capitalize;
+}
+
+.portfolio-list-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  text-transform: capitalize;
+}
+
+.portfolio-list-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.portfolio-section {
+  background: #fff;
+}
+
+/*============/PORTFOLIO SECTION STYLES============*/
+
+/*============PAGE FOOTER STYLES============*/
+
+.footer-logo .logo-part {
+  color: #f4f4fd;
+}
+
+/*.footer-logo {
+  margin-bottom: 16px;
+}*/
+
+.page-footer-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+}
+
+.page-footer {
+  background: #2e2f42;
+}
+
+/*============/PAGE FOOTER STYLES============*/
