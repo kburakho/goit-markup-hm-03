@@ -3,8 +3,9 @@
 ul,
 ol {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 h1,
@@ -14,8 +15,14 @@ h4,
 h5,
 h6,
 p {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
+
+img {
+  display: block;
+}
+
 /*=================/RESET=============*/
 
 a {
@@ -35,8 +42,10 @@ body {
 
 .container {
   max-width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nav-link:hover,
@@ -44,6 +53,25 @@ body {
 .contacts-link:hover,
 .contacts-link:focus {
   color: #404bbf;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section-padding {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 /*============/COMMON STYLES============*/
@@ -67,7 +95,17 @@ body {
 .nav-list {
   display: flex;
   align-items: center;
-  gap: 40px;
+  column-gap: 40px;
+}
+
+.nav-link {
+  display: block;
+  padding: 24px 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 
 .contacts-list {
@@ -92,16 +130,6 @@ body {
 }
 
 .header-logo .logo-part {
-  color: #2e2f42;
-}
-
-.nav-link {
-  display: block;
-  padding: 24px 0;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #2e2f42;
 }
 
@@ -131,10 +159,12 @@ body {
 }
 
 .main-title {
+  max-width: 496px;
   padding-top: 188px;
-  padding-bottom: 24px;
+  padding-bottom: 48px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 48px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -144,15 +174,15 @@ body {
 }
 
 .order-service-btn {
-  padding-top: 24px;
-  padding-bottom: 188px;
+  display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 188px;
   display: block;
   border-radius: 4px;
-  padding: 16px 32px;
   width: 169px;
   height: 56px;
+  color: #fff;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
 }
@@ -167,39 +197,29 @@ body {
 
 /*============OUR APPROACH STYLES============*/
 
-.approach {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.approach-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #2e2f42;
-  display: none;
-}
-
 .approach-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
   gap: 24px;
   list-style: none;
 }
 
 .approach-list-item {
-  width: 264px;
+  flex-basis: 264px;
   height: 104px;
-  flex-basis: calc((100% - 24px) / 4);
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 .approach-list-title {
+  padding-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  text-transform: capitalize;
 }
 
 .approach-list-text {
@@ -215,20 +235,33 @@ body {
 /*============REVIEW SECTION STYLES============*/
 
 .review-section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  display: block;
   background: #f4f4fd;
 }
 
+.review-title {
+  margin-top: 120px;
+  margin-bottom: 72px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+}
+
 .review-list {
+  margin-bottom: 120px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
+  flex-wrap: nowrap;
+  column-gap: 24px;
   padding: 0;
   list-style: none;
   background: #f4f4fd;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .review-list-item {
@@ -240,35 +273,21 @@ body {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16),
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
-}
-
-.review-title {
-  padding-top: 120px;
-  padding-bottom: 72px;
-  margin-left: auto;
-  margin-right: auto;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #2e2f42;
-  text-transform: capitalize;
+  column-gap: 24px;
 }
 
 .review-list-fullname {
-  padding: 32px 65px 4px;
+  padding: 32px 49px 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  text-transform: capitalize;
 }
 
 .review-list-text {
-  padding-left: 4px 52px 32px;
+  padding: 0 52px 32px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -286,23 +305,24 @@ body {
 }
 
 .portfolio-title {
-  padding-top: 60px;
-  padding-bottom: 72px;
+  margin-top: 120px;
+  margin-bottom: 72px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.11111;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  text-transform: capitalize;
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
-  padding: 0;
+  gap: 0 24px;
   list-style: none;
+  border: 1px;
 }
 
 .portfolio-list-item {
@@ -334,7 +354,7 @@ body {
 /*============PAGE FOOTER STYLES============*/
 
 .page-footer {
-  padding-top: 60px;
+  margin-top: 60px;
   padding-bottom: 0;
 }
 
