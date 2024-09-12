@@ -203,7 +203,7 @@ body {
   justify-content: flex-start;
   align-items: stretch;
   flex-wrap: nowrap;
-  gap: 24px;
+  column-gap: 24px;
   list-style: none;
 }
 
@@ -253,11 +253,10 @@ body {
 }
 
 .review-list {
+  display: flex;
   margin-bottom: 120px;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  flex-wrap: nowrap;
   column-gap: 24px;
   padding: 0;
   list-style: none;
@@ -268,7 +267,7 @@ body {
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
   padding: 0px 0px 32px 0px;
-  width: 264px;
+  width: calc((100%-72px) / 4);
   height: 380px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16),
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -302,6 +301,7 @@ body {
 .portfolio-section {
   padding-top: 60px;
   padding-bottom: 60px;
+  background: #fff;
 }
 
 .portfolio-title {
@@ -319,14 +319,12 @@ body {
 
 .portfolio-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0 24px;
-  list-style: none;
-  border: 1px;
+  column-gap: 24px;
 }
 
 .portfolio-list-item {
-  flex-basis: calc((100% - 24px) / 6);
+  width: calc((100%-48px) / 3);
+  border: 1px solid #e7e9fc;
 }
 
 .portfolio-list-title {
