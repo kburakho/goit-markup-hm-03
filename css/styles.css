@@ -152,8 +152,10 @@ body {
 /*============HERO SECTION STYLES============*/
 
 .hero-section {
-  padding-top: 0;
+  padding-top: 0px;
+  padding-right: 0px;
   padding-bottom: 60px;
+  padding-left: 0px;
   margin: auto;
   height: 600px;
   background: #2e2f42;
@@ -162,7 +164,9 @@ body {
 .main-title {
   max-width: 496px;
   padding-top: 188px;
+  padding-right: 0px;
   padding-bottom: 48px;
+  padding-left: 0px;
   margin-left: auto;
   margin-right: auto;
   font-weight: 700;
@@ -177,7 +181,7 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 188px;
+  padding-bottom: 188px;
   display: block;
   border-radius: 4px;
   border: none;
@@ -214,7 +218,6 @@ body {
 }
 
 .approach-list-title {
-  padding: 0 0 8px 0;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -241,7 +244,9 @@ body {
 
 .review-title {
   padding-top: 120px;
+  padding-right: 0px;
   padding-bottom: 72px;
+  padding-left: 0px;
   margin-left: auto;
   margin-right: auto;
   font-weight: 700;
@@ -254,11 +259,13 @@ body {
 
 .review-list {
   display: flex;
-  margin-bottom: 120px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 120px;
+  padding-left: 0px;
   margin-left: auto;
   margin-right: auto;
   column-gap: 24px;
-  padding: 0px;
   list-style: none;
   background: #f4f4fd;
 }
@@ -291,6 +298,11 @@ body {
 
 .review-list-text {
   padding-top: 8px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -309,6 +321,9 @@ body {
 
 .portfolio-list-card {
   padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
@@ -317,7 +332,9 @@ body {
 
 .portfolio-title {
   padding-top: 120px;
+  padding-right: 0px;
   padding-bottom: 72px;
+  padding-left: 0px;
   margin-left: auto;
   margin-right: auto;
   font-weight: 700;
@@ -341,6 +358,7 @@ body {
 
 .portfolio-list-title {
   padding-top: 32px;
+  padding-right: 0px;
   padding-bottom: 8px;
   padding-left: 16px;
   font-weight: 500;
@@ -351,6 +369,8 @@ body {
 }
 
 .portfolio-list-text {
+  padding-top: 0px;
+  padding-right: 0px;
   padding-bottom: 32px;
   padding-left: 16px;
   font-size: 16px;
@@ -372,6 +392,9 @@ body {
 .footer-logo {
   display: inline-block;
   padding-top: 101px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
 }
 
 .footer-logo .logo-part {
@@ -385,8 +408,10 @@ body {
 
 .page-footer-text {
   max-width: 264px;
-  margin-top: 16px;
+  padding-top: 16px;
+  padding-right: 0px;
   padding-bottom: 100px;
+  padding-left: 0px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
