@@ -162,9 +162,9 @@ body {
 .main-title {
   max-width: 496px;
   padding-top: 188px;
+  padding-bottom: 48px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 48px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -180,7 +180,8 @@ body {
   margin-bottom: 188px;
   display: block;
   border-radius: 4px;
-  width: 169px;
+  border: none;
+  min-width: 169px;
   height: 56px;
   color: #fff;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -213,7 +214,7 @@ body {
 }
 
 .approach-list-title {
-  padding-bottom: 8px;
+  padding: 0 0 8px 0;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -239,8 +240,8 @@ body {
 }
 
 .review-title {
-  margin-top: 120px;
-  margin-bottom: 72px;
+  padding-top: 120px;
+  padding-bottom: 72px;
   margin-left: auto;
   margin-right: auto;
   font-weight: 700;
@@ -257,7 +258,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   column-gap: 24px;
-  padding: 0;
+  padding: 0px;
   list-style: none;
   background: #f4f4fd;
 }
