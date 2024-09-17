@@ -124,7 +124,7 @@ body {
 }
 
 .header-logo {
-  padding: 24px;
+  padding: 24px 0;
   margin-right: 76px;
 }
 
@@ -252,7 +252,6 @@ body {
 }
 
 .review-title {
-  padding-top: 120px;
   margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
@@ -264,11 +263,7 @@ body {
 
 .review-list {
   display: flex;
-  padding-bottom: 120px;
-  margin-left: auto;
-  margin-right: auto;
   list-style: none;
-  background: #f4f4fd;
 }
 
 .review-list-card {
@@ -319,7 +314,6 @@ body {
 }
 
 .portfolio-title {
-  padding: 120px 0 0 0;
   margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
@@ -337,7 +331,7 @@ body {
 }
 
 .portf .portfolio-list-item {
-  width: calc((100%-48px) / 3);
+  width: calc((100% - 48px) / 3);
 }
 
 .portfolio-list-card {
@@ -345,7 +339,6 @@ body {
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
   padding: 32px 16px;
-  width: 360px;
 }
 
 .portfolio-list-title {
